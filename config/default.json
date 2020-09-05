@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://bryan123:bryan123@fret-board.pxema.mongodb.net/Fret-board?retryWrites=true&w=majority"
+}
