@@ -7,6 +7,7 @@ const ProfileSchema = new mongoose.Schema({
   },
   location: {
     type: String,
+    required: true,
   },
   genres: {
     type: [String],
