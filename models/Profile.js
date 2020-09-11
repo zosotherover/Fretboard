@@ -9,17 +9,16 @@ const ProfileSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  genres: {
-    type: [String],
-    required: true,
+  website: {
+    type: String,
   },
   bio: {
     type: String,
   },
-  gear: {
-    type: String,
+  genres: {
+    type: [String],
   },
-  website: {
+  gear: {
     type: String,
   },
 
