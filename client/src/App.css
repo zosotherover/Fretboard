@@ -1,6 +1,6 @@
 /* Global Styles */
 :root {
-  --primary-color: #334e74;
+  --primary-color: #1c2b41;
   --dark-color: #343a40;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -19,7 +19,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: rgb(193, 205, 230);
+  background-color: rgb(131, 141, 161);
   color: #333;
 }
 
@@ -325,7 +325,7 @@ button {
 }
 
 .navbar a:hover {
-  color: var(--primary-color);
+  color: rgb(202, 198, 228);
 }
 
 .navbar .welcome span {
