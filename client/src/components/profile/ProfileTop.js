@@ -5,9 +5,7 @@ const ProfileTop = ({
   profile: {
     location,
     website,
-    bio,
     genres,
-    gear,
     social,
     user: { name, avatar },
   },
@@ -17,9 +15,7 @@ const ProfileTop = ({
       <img class='round-img my-1' src={avatar} alt='avatar' />
       <h1 class='large'>{name}</h1>
       <p>{location && <span>{location}</span>}</p>
-      <p>{bio}</p>
       <p>I enjoy: {genres}</p>
-      <p>I play: {gear}</p>
       <div className='icons my-1'>
         {website && (
           <a href={website} target='_blank' rel='noopener noreferrer'>
