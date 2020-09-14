@@ -5,7 +5,6 @@ import {
   GET_PROFILE,
   GET_PROFILES,
   PROFILE_ERROR,
-  UPDATE_PROFILE,
   CLEAR_PROFILE,
   ACCOUNT_DELETED,
 } from './types';
