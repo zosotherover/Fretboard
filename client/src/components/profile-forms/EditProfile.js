@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createProfile, getCurrentProfile } from '../../actions/profile';
 
-const CreateProfile = ({
+const EditProfile = ({
   createProfile,
   getCurrentProfile,
   profile: { profile, loading },
@@ -23,6 +23,24 @@ const CreateProfile = ({
     instagram: '',
   });
   const [displaySocialInputs, toggleSocialInputs] = useState(false);
+
+  useEffect(() => {
+    getCurrentProfile();
+
+    setFormData({
+      location: loading || !profile.location ? '' : profile.location,
+      website: loading || !profile.website ? '' : profile.website,
+      bio: loading || !profile.bio ? '' : profile.bio,
+      genres: loading || !profile.genres ? '' : profile.genres,
+      gear: loading || !profile.gear ? '' : profile.gear,
+      twitter: loading || !profile.social ? '' : profile.social.twitter,
+      facebook: loading || !profile.social ? '' : profile.social.facebook,
+      linkedin: loading || !profile.social ? '' : profile.social.linkedin,
+      youtube: loading || !profile.social ? '' : profile.social.youtube,
+      instagram: loading || !profile.social ? '' : profile.social.instagram,
+    });
+  }, [loading]);
+
   const {
     location,
     website,
@@ -197,5 +215,5 @@ const mapStateToProps = (state) => ({
   profile: state.profile,
 });
 export default connect(mapStateToProps, { createProfile, getCurrentProfile })(
-  withRouter(CreateProfile)
+  withRouter(EditProfile)
 );

@@ -16,7 +16,7 @@ const ProfileSchema = new mongoose.Schema({
     type: String,
   },
   genres: {
-    type: [String],
+    type: String,
   },
   gear: {
     type: String,
@@ -45,4 +45,4 @@ const ProfileSchema = new mongoose.Schema({
   },
 });
 
-module.exports = Profile = mongoose.model('profile', ProfileSchema);
+module.exports = mongoose.model('profile', ProfileSchema);
