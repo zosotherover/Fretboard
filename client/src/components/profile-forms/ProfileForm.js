@@ -75,7 +75,7 @@ const ProfileForm = ({
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Location'
+            placeholder='* Location'
             name='location'
             value={location}
             onChange={(e) => onChange(e)}

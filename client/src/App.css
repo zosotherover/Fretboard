@@ -244,7 +244,7 @@ img {
 .form .form-text {
   display: block;
   margin-top: 0.3rem;
-  color: #888;
+  color: black;
 }
 
 .form input[type='text'],
