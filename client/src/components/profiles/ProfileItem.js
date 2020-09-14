@@ -18,6 +18,9 @@ const ProfileItem = ({
         <h2>{location}</h2>
         <p>Likes: {genres}</p>
         <p>Plays: {gear}</p>
+        <Link to={`/profile/${_id}`} className='btn btn-primary'>
+          View Profile
+        </Link>
       </div>
     </div>
   );
